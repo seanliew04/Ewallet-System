@@ -1,0 +1,83 @@
+    <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+
+        <uses-permission android:name="android.permission.INTERNET" />
+
+        <application
+            android:allowBackup="true"
+            android:dataExtractionRules="@xml/data_extraction_rules"
+            android:fullBackupContent="@xml/backup_rules"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.MoneyNow"
+            tools:targetApi="31">
+
+            <activity
+                android:name=".LoginActivity"
+                android:exported="true">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+
+            <activity
+                android:name=".StaffDashboardActivity"
+                android:exported="true" />
+
+            <activity
+                android:name=".VendorDashboardActivity"
+                android:exported="true" />
+
+            <activity
+                android:name=".AdminDashboardActivity"
+                android:exported="true" />
+
+            <activity
+                android:name=".PaymentActivity"
+                android:exported="true" />
+
+            <!-- Add the TransferActivity declaration -->
+            <activity
+                android:name=".VendorTransactionDetailActivity"
+                android:exported="true" />
+
+            <activity
+                android:name=".ForgotPasswordActivity"
+                android:exported="true" />
+
+            <!-- Add the TransactionDetailActivity declaration -->
+            <activity
+                android:name=".TransactionDetailActivity"
+                android:exported="true" />
+
+            <activity
+                android:name=".ManageRefundsActivity"
+                android:exported="true" />
+
+            <activity
+                android:name=".ManageAccountActivity"
+                android:windowSoftInputMode="adjustPan"/>
+
+            <activity
+                android:name=".UserDetailsActivity"
+                android:exported="true" />
+
+            <!-- Add the TransactionHistoryActivity declaration -->
+            <activity
+                android:name=".TransactionHistoryActivity"
+                android:exported="true" />
+
+            <activity
+                android:name=".VendorTransactionHistoryActivity"
+                android:exported="true" />
+
+
+            <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts" />
+
+        </application>
+    </manifest>
