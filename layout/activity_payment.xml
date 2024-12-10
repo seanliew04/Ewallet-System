@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity">
+
+    <!-- Title -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#6672FD"
+        android:backgroundTint="#6672FD"
+        android:contentDescription="Back"
+        android:src="@android:drawable/ic_menu_revert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/payment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/poppins_black"
+        android:text="Payment"
+        android:textAlignment="center"
+        android:textColor="#6672FE"
+        android:textSize="29sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Amount Input -->
+    <EditText
+        android:id="@+id/amount_input"
+        android:layout_width="366dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="  Amount"
+        android:inputType="numberDecimal"
+        android:textColor="#6672FE"
+        android:textColorHint="#6672FE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/payment_title" />
+
+    <!-- Vendor ID Input -->
+    <EditText
+        android:id="@+id/vendor_id_input"
+        android:layout_width="366dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="  Vendor ID"
+        android:inputType="text"
+        android:textColor="#6672FE"
+        android:textColorHint="#6672FE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/amount_input" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="366dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="  Password"
+        android:inputType="textPassword"
+        android:textColor="#6672FE"
+        android:textColorHint="#6672FE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vendor_id_input" />
+
+    <!-- Pay Button -->
+    <ImageView
+        android:id="@+id/pay_button"
+        android:layout_width="102dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_input"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/btn_arraw1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

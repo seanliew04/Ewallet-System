@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VendorDashboardActivity">
+
+    <!-- Welcome Message with User ID Display at Top -->
+
+    <!-- Transaction History Label -->
+
+    <!-- ListView to display transaction history -->
+
+    <!-- Back Button to Login at Bottom Left -->
+
+    <TextView
+        android:id="@+id/textViewVendorID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_black"
+        android:text="Welcome (ID)"
+        android:textColor="#6672FE"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTransactionHistoryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_black"
+        android:text="Transaction"
+        android:textAlignment="center"
+        android:textColor="#6672FE"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewVendorID" />
+
+    <ListView
+        android:id="@+id/vendorTransactionListView"
+        android:layout_width="372dp"
+        android:layout_height="516dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="44dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTransactionHistoryLabel" />
+
+    <Button
+        android:id="@+id/buttonBackToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#6672FE"
+        android:contentDescription="Back to Login"
+        android:text="Log Out"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Balance Label -->
+
+    <!-- Balance Value -->
+
+    <TextView
+        android:id="@+id/textViewVendorBalanceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="500dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppins_black"
+        android:text="Balance:"
+        android:textColor="#6672FE"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonBackToLogin" />
+
+    <TextView
+        android:id="@+id/textViewVendorBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppins_black"
+        android:text="RM0.00"
+        android:textColor="#6672FE"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewVendorBalanceLabel" />
+
+    <Button
+        android:id="@+id/buttonTransactionHistory1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#6672FE"
+        android:text="View All"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/textViewVendorBalance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateIds" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

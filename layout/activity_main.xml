@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/top_background1" />
+
+    <TextView
+        android:id="@+id/name_title"
+        android:layout_width="210dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/poppins_black"
+        android:text="Welcome to MoneyNow"
+        android:textAlignment="center"
+        android:textColor="#6672FE"
+        android:textSize="29sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="366dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="216dp"
+        android:drawableStart="@drawable/email"
+        android:inputType="text"
+        android:hint="Email"
+        android:textColor="#6672FE"
+        android:textColorHint="#6672FE"
+        android:background="@drawable/edit_text_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_title" />
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="368dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="28dp"
+        android:drawableStart="@drawable/password"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColor="#6672FE"
+        android:textColorHint="#6672FE"
+        android:background="@drawable/edit_text_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_input" />
+
+    <ImageView
+        android:id="@+id/login_button"
+        android:layout_width="102dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_input"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/btn_arraw1" />
+
+    <TextView
+        android:id="@+id/forgotPasswordLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Forgot Password?"
+        android:textColor="#6672FE"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_input" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

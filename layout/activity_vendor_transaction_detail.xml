@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VendorTransactionDetailActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/transactionDetailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_black"
+        android:text="Transaction Details"
+        android:textAlignment="center"
+        android:textColor="#6672FE"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Transaction ID Label -->
+
+    <!-- Transaction ID Input -->
+    <TextView
+        android:id="@+id/transactionIdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Transaction ID"
+        android:textColor="#6672FE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/transactionDetailTitle" />
+
+    <EditText
+        android:id="@+id/transactionIdInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:enabled="false"
+        android:hint="Transaction ID"
+        android:textAlignment="center"
+        android:textColor="#6672FE"
+        android:textColorHint="#6672FE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/transactionIdLabel" />
+
+    <!-- Transaction Date Label -->
+
+    <!-- Transaction Date Input -->
+    <TextView
+        android:id="@+id/transactionDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Transaction Date"
+        android:textColor="#6672FE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/transactionIdInput" />
+
+    <EditText
+        android:id="@+id/transactionDateInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:enabled="false"
+        android:hint="Transaction Date"
+        android:textAlignment="center"
+        android:textColor="#6672FE"
+        android:textColorHint="#6672FE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/transactionDateLabel" />
+
+    <!-- Transaction Amount Label -->
+
+    <!-- Transaction Amount Input -->
+
+    <!-- Staff User ID Label -->
+    <TextView
+        android:id="@+id/transactionAmountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Transaction Amount"
+        android:textColor="#6672FE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/transactionDateInput" />
+
+    <EditText
+        android:id="@+id/transactionAmountInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="36dp"
+        android:enabled="false"
+        android:hint="Transaction Amount"
+        android:textAlignment="center"
+        android:textColor="#6672FE"
+        android:textColorHint="#6672FE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/transactionAmountLabel" />
+
+    <!-- Staff User ID Input -->
+    <TextView
+        android:id="@+id/staffUserIDLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Staff User ID"
+        android:textColor="#6672FE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/transactionAmountInput" />
+
+    <EditText
+        android:id="@+id/transactionStaffUserIDInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:enabled="false"
+        android:hint="Staff User ID"
+        android:textAlignment="center"
+        android:textColor="#6672FE"
+        android:textColorHint="#6672FE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/staffUserIDLabel" />
+
+    <!-- Transaction Status Label -->
+
+    <!-- Transaction Status Input -->
+    <TextView
+        android:id="@+id/transactionStatusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Transaction Status"
+        android:textColor="#6672FE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/transactionStaffUserIDInput" />
+
+    <EditText
+        android:id="@+id/transactionStatusInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:enabled="false"
+        android:hint="Transaction Status"
+        android:textAlignment="center"
+        android:textColor="#6672FE"
+        android:textColorHint="#6672FD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/transactionStatusLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
